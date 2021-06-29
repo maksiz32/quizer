@@ -1,12 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru_RU">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <title>Главная</title>
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">LogoTip</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="closed"></span>
+                  </button>
+                  <div class="collapse navbar-collapse nav-items" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-items-link" href="#">О нас</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-items-link" href="#">Новости</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-items-link" href="#">Сотрудничество</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-items-link" href="#">Помощь</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-items-link" href="#">Контакты</a>
+                      </li>
+                      <li class="nav-item d-lg-none">
+                        <a class="nav-items-link" href="#">Личный кабинет</a>
+                      </li>
+                      <li class="nav-item d-lg-none">
+                        <a class="nav-items-link" href="#">Выход</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <section class="pagetop d-none d-lg-block">
+            <section class="pagetop-pages">
+                <a href="#" class="btn pagetop-pages-btn icon-briefcase">Страница 1</a>
+                <a href="#" class="btn pagetop-pages-btn icon-users">Страница 2</a>
+                <a href="#" class="btn pagetop-pages-btn icon-doc-inv">Страница 3</a>
+                <a href="#" class="btn pagetop-pages-btn icon-flash">Страница 4</a>
+            </section>
+            <section class="pagetop-cabinet">
+                <a href="#" class="btn pagetop-cabinet-btn icon-cog">Личный кабинет</a>
+                <a href="#" class="btn pagetop-cabinet-btn icon-off">Выход</a>
+            </section>
+        </section>
+        <section class="pagetop-bottom">
+            <section class="pagetop-bottom-user order-last">
+                <p class="pagetop-bottom-user__strong">Добро пожаловать, <span class="pagetop-bottom-user__username">UserName</span></p>
+                Учетная запись действительна до <span>2020-12-31 00:00:00</span>
+                <p class="pagetop-bottom-user__normal">Ключ активации на устройствах</p>
+            </section>
+            <section class="page-bottom-buttons d-lg-none">
+                <button class="btn page-bottom-buttons__btn icon-briefcase"></button>
+                <button class="btn page-bottom-buttons__btn icon-users"></button>
+                <button class="btn page-bottom-buttons__btn icon-doc-inv"></button>
+                <button class="btn page-bottom-buttons__btn icon-flash"></button>
+            </section>
+            <section class="pagetop-bottom-title order-first">
+                <h1 class="pagetop-bottom-title__txt">Заголовок страницы</h1>
+            </section>
+        </section>
+        <nav aria-label="breadcrumb" class="bread">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                  <a href="#" class="my-icons icon-home"></a>
+                </li>
+              <li class="breadcrumb-item">
+                  <a hrer="#" class="breadcrumb-item__pages">Страница 2</a>
+                </li>
+            </ol>
+          </nav>
+        <main class="main">
+            <nav class="nav flex-column main-nav d-none d-lg-block">
+                <a class="nav-link page-link icon-left-open" href="#">Пункт меню 1</a>
+                <a class="nav-link page-link icon-list-alt dropdown-toggle" href="#" id="dropmenu" role="button" aria-expanded="false">
+                    Пункт меню 2
+                </a>
+                <ul class="my-dropdown-menu hide">
+                    <li><a class="my-dropdown-item icon-th-large" href="#">Подпункт 1</a></li>
+                    <li><a class="my-dropdown-item icon-play" href="#">Подпункт 2</a></li>
+                    <li><a class="my-dropdown-item icon-download" href="#">Подпункт 3</a></li>
+                  </ul>
+                <a class="nav-link page-link icon-user" href="#">Пункт меню 3</a>
+                <a class="nav-link page-link icon-ok" href="#">Пункт меню 4</a>
+                <a class="nav-link page-link icon-cog" href="#">Пункт меню 5</a>
+              </nav>
+              <article class="main-txt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ratione obcaecati optio vitae sequi, adipisci asperiores aperiam omnis necessitatibus deserunt repellendus eaque saepe non sunt dolorum laborum, est et possimus!
+                  Fugit eos eligendi, ducimus, cum, optio a libero quis corrupti natus accusantium nobis dolores. Quidem, optio natus similique eveniet, accusamus, nam temporibus corrupti cumque fugit quaerat ducimus asperiores a laboriosam.
+                  Doloremque, neque ipsa nulla aliquam nesciunt facere delectus voluptatum ex? Quos perferendis modi mollitia repellendus tempore quod eum. Nesciunt quo voluptatibus necessitatibus harum a accusamus dicta architecto. Tenetur, eaque consectetur.
+                  Facere ex nisi voluptas, deserunt amet nesciunt reprehenderit similique ipsa! Dicta ipsa ab beatae animi similique tempora impedit est perferendis iste in placeat ipsam hic asperiores sunt sit, tenetur libero?
+                  Optio nobis asperiores ipsa, sed similique alias! Consectetur, minus officiis commodi illo omnis delectus molestiae enim. Dolore minus porro illum eaque officia suscipit quidem vitae alias nihil? Ratione, magnam aperiam.
+                  Voluptatibus commodi atque libero, officia numquam eos ea amet accusantium autem est ipsam omnis! Eum dolor illum aspernatur aliquid autem sint, non, aliquam adipisci eveniet error repudiandae magni, ipsa perferendis.
+                  Amet aspernatur, laudantium quos expedita magnam facere voluptatibus! Quas voluptates harum labore animi sequi alias facere nulla, odit eaque sit voluptate qui ipsam facilis provident. Provident aliquam error omnis architecto!
+                  Ea ipsum labore velit error. Illo quae sequi odit veritatis. Cupiditate provident expedita ratione consequuntur sed. Adipisci fugiat, eligendi quisquam blanditiis iste explicabo laboriosam perferendis! Rerum, facere temporibus? Iste, nesciunt?
+              </article>
+        </main>
+        <footer class="fixed-bottom footer">
+            <a class="icon-left-open footer-link" href="#"></a>
+            <a class="icon-list-alt footer-link" href="#"></a>
+            <a class="icon-user footer-link" href="#"></a>
+            <a class="icon-ok footer-link" href="#"></a>
+            <a class="icon-cog footer-link" href="#"></a>
+        </footer>
+    </div>
 </body>
 </html>
