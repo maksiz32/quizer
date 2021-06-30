@@ -1,0 +1,50 @@
+@mixin my-border {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+@mixin informer {
+    display: block;
+    padding: 15px;
+    margin: 10px auto;
+    font-weight: 700;
+}
+
+.form {
+    display: flex;
+    margin: 20px auto;
+    flex-direction: column;
+    max-width: 40vw;
+    padding: 20px;
+    overflow: hidden;
+    @include my-border();
+
+    &-title {
+        overflow: hidden;
+        margin: -30px 0 20px 0;
+        padding: 0 5px 0 5px;
+        font-size: 1em;
+        line-height: 1em;
+        white-space: nowrap;
+        z-index: 1;
+        position: absolute;
+        background-color: #fff;
+    }
+
+    &-textfield {
+        margin: 0 0 20px 0;
+        @include my-border();
+    }
+}
+
+.alert {
+    @include informer();
+    background-color: antiquewhite;
+    color: red;
+}
+
+.info {
+    @include informer();
+    background-color: aqua;
+    color: green;
+}
