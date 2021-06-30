@@ -22,11 +22,11 @@ class PhoneProvider
                         'idMail' => $id
                     ]);
                 $res = $statement->fetchall(PDO::FETCH_ASSOC);
+
                 $result = '';
                 foreach ($res as $response) {
                     $result .= $response['phone'] . " ";
                 }
-
                 return [
                     'res' => 1,
                     'mes' => $result

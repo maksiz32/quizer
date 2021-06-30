@@ -31,7 +31,7 @@
             };
             (
                 async function() {
-                    let resp = await fetch('phone', {
+                    let resp = await fetch('/getphone', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json;charset=utf-8'
